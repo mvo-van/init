@@ -1,0 +1,1 @@
+ifconfig | grep "broadcast" | ping 10.12.255.255 | arp -a | cut -d " " -f2 | sed "s/[()]//g"

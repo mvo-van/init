@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "login a supprimer : "
+read sup
+userdel -r -f "$sup"

@@ -1,0 +1,2 @@
+su [login]
+ssh [login]@[ip]

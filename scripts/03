@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -n "chemin d'acces au git : "
+read CHEMIN
+cd ~/"$CHEMIN"
+echo -n "fichiers a git : "
+read FICHIER
+git add "$FICHIER"
+echo -n "commit : "
+read COM
+git commit -m ""$COM""
+echo -n "souhaitez-vous continuer ? [o/n] : "
+read RET
+if [ "$RET" == "o" ]; then
+	git push
+else
+	echo "Annulation"
+fi

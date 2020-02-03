@@ -1,0 +1,1 @@
+ping slash16.org -c 1 | grep PING | cut -d " " -f3 | sed "s/[():]//g"
